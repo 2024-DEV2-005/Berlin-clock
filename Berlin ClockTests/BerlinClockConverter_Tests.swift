@@ -37,10 +37,25 @@ final class BerlinClockConverter_Tests: XCTestCase {
             XCTAssertEqual(Lights.off, berlinClockResult.seconds)
         
     }
+    
+    
+    func test_BerlinClockConverter_seconds_shouldBeTrue() {
+        
+        // Given
+            let converter = BerlinClockConverter()
+            let date =  Date().withSeconds(seconds: 0)
+          
+        
+        // When
+            let berlinClockResult = converter.convert(date: date)
+        
+        
+        // Then
+            XCTAssertEqual(Lights.yellow, berlinClockResult.seconds)
+        
+    }
 
 }
-
-
 
 extension Date {
     func withSeconds(seconds: Int) -> Date {

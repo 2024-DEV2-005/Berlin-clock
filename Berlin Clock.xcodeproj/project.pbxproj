@@ -83,11 +83,11 @@
 			children = (
 				C30742992B3B4D9800F0B96A /* Protocols */,
 				C30742852B3B430500F0B96A /* Models */,
+				C30742882B3B4A3000F0B96A /* BerlinClockConverter.swift */,
 				C30742742B3B3CF800F0B96A /* Berlin_ClockApp.swift */,
 				C30742762B3B3CF800F0B96A /* ContentView.swift */,
 				C30742782B3B3CF900F0B96A /* Assets.xcassets */,
 				C307427A2B3B3CF900F0B96A /* Preview Content */,
-				C30742882B3B4A3000F0B96A /* BerlinClockConverter.swift */,
 			);
 			path = "Berlin Clock";
 			sourceTree = "<group>";
