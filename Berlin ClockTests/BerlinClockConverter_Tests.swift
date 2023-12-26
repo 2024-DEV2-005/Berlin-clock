@@ -104,4 +104,22 @@ final class BerlinClockConverter_Tests: XCTestCase {
         
     }
     
+    func test_BerlinClockConverter_shouldReturnListBottomHoursWithOneLightOn() {
+        
+        // Given
+        let converter = BerlinClockConverter()
+        let date = Date().withHours(hours: 1)
+        
+        // When
+        let berlinClockResult = converter.convert(date: date)
+        
+        //Then
+        XCTAssertEqual(Lights.red, berlinClockResult.bottomHours[0])
+        XCTAssertEqual(Lights.off, berlinClockResult.bottomHours[1])
+        XCTAssertEqual(Lights.off, berlinClockResult.bottomHours[2])
+        XCTAssertEqual(Lights.off, berlinClockResult.bottomHours[3])
+        
+    }
+    
+    
 }

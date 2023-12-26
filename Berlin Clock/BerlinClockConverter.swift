@@ -14,11 +14,12 @@ class BerlinClockConverter: BerlinClockConvertingTime {
         
         let secondsIsOn = calendar.component(.second, from: date) % 2 == 0
         let topHoursOn = convertHours(hourLights: calendar.component(.hour, from: date) / 5)
+        let bottomHours = convertHours(hourLights: calendar.component(.hour, from: date) % 5)
         
         return BerlinClock(
             seconds: secondsIsOn ? Lights.yellow : Lights.off,
             topHours: topHoursOn,
-            bottomHours: [Lights.off],
+            bottomHours: bottomHours,
             topMinutes: [Lights.off],
             bottomMinutes: [Lights.off]
         )
