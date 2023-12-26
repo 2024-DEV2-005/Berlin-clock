@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "21038764-8BCF-49C4-96DE-54F13016F287"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0B313BAC-A721-4BC5-A7CC-C52CBB53E15A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Berlin ClockTests/BerlinClockConverter_Tests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "test_BerlinClockConverter_shouldReturnListAllTopHoursLightsOff()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C5FB4412-09FA-40E9-B946-955CA70A68A5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Berlin ClockTests/BerlinClockConverter_Tests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "test_BerlinClockConverter_shouldReturnListAllTopHoursLightsOff()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "382BFA46-CDB4-4740-A1F9-5FD157BBDFE0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Berlin ClockTests/BerlinClockConverter_Tests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "test_BerlinClockConverter_shouldReturnListAllTopHoursLightsOff()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6872326C-DCB5-4849-BF5D-8FE3CC68B30E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Berlin Clock/BerlinClockConverter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "convert(date:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6872326C-DCB5-4849-BF5D-8FE3CC68B30E - d2f3f4cf0e751b43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Berlin_Clock.BerlinClockConverter.convert(date: Foundation.Date) -&gt; Berlin_Clock.BerlinClock"
+                  moduleName = "Berlin Clock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kkar/Desktop/Berlin%20Clock/Berlin%20Clock/BerlinClockConverter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "604">
+               </Location>
+               <Location
+                  uuid = "6872326C-DCB5-4849-BF5D-8FE3CC68B30E - d2f3f4cf0e751b43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Berlin_Clock.BerlinClockConverter.convert(date: Foundation.Date) -&gt; Berlin_Clock.BerlinClock"
+                  moduleName = "Berlin Clock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kkar/Desktop/Berlin%20Clock/Berlin%20Clock/BerlinClockConverter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "624">
+               </Location>
+               <Location
+                  uuid = "6872326C-DCB5-4849-BF5D-8FE3CC68B30E - d2f3f4cf0e751b43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Berlin_Clock.BerlinClockConverter.convert(date: Foundation.Date) -&gt; Berlin_Clock.BerlinClock"
+                  moduleName = "Berlin Clock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kkar/Desktop/Berlin%20Clock/Berlin%20Clock/BerlinClockConverter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "748">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9479D443-4D4E-4C79-9D3F-413E48FF35EF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Berlin Clock/BerlinClockConverter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "convert(date:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9479D443-4D4E-4C79-9D3F-413E48FF35EF - d2f3f4cf0e751b26"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Berlin_Clock.BerlinClockConverter.convert(date: Foundation.Date) -&gt; Berlin_Clock.BerlinClock"
+                  moduleName = "Berlin Clock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kkar/Desktop/Berlin%20Clock/Berlin%20Clock/BerlinClockConverter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "864">
+               </Location>
+               <Location
+                  uuid = "9479D443-4D4E-4C79-9D3F-413E48FF35EF - d2f3f4cf0e751bc7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Berlin_Clock.BerlinClockConverter.convert(date: Foundation.Date) -&gt; Berlin_Clock.BerlinClock"
+                  moduleName = "Berlin Clock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kkar/Desktop/Berlin%20Clock/Berlin%20Clock/BerlinClockConverter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "1388">
+               </Location>
+               <Location
+                  uuid = "9479D443-4D4E-4C79-9D3F-413E48FF35EF - d2f3f4cf0e751bc7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Berlin_Clock.BerlinClockConverter.convert(date: Foundation.Date) -&gt; Berlin_Clock.BerlinClock"
+                  moduleName = "Berlin Clock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kkar/Desktop/Berlin%20Clock/Berlin%20Clock/BerlinClockConverter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "1440">
+               </Location>
+               <Location
+                  uuid = "9479D443-4D4E-4C79-9D3F-413E48FF35EF - d2f3f4cf0e751bc7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Berlin_Clock.BerlinClockConverter.convert(date: Foundation.Date) -&gt; Berlin_Clock.BerlinClock"
+                  moduleName = "Berlin Clock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kkar/Desktop/Berlin%20Clock/Berlin%20Clock/BerlinClockConverter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "1600">
+               </Location>
+               <Location
+                  uuid = "9479D443-4D4E-4C79-9D3F-413E48FF35EF - d2f3f4cf0e751bc7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Berlin_Clock.BerlinClockConverter.convert(date: Foundation.Date) -&gt; Berlin_Clock.BerlinClock"
+                  moduleName = "Berlin Clock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kkar/Desktop/Berlin%20Clock/Berlin%20Clock/BerlinClockConverter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "1768">
+               </Location>
+               <Location
+                  uuid = "9479D443-4D4E-4C79-9D3F-413E48FF35EF - d2f3f4cf0e751b05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Berlin_Clock.BerlinClockConverter.convert(date: Foundation.Date) -&gt; Berlin_Clock.BerlinClock"
+                  moduleName = "Berlin Clock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kkar/Desktop/Berlin%20Clock/Berlin%20Clock/BerlinClockConverter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "1144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

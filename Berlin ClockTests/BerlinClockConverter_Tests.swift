@@ -13,11 +13,11 @@ import XCTest
 // Testing Structure: Given, When, Then
 
 final class BerlinClockConverter_Tests: XCTestCase {
-
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-
+    
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
@@ -25,16 +25,16 @@ final class BerlinClockConverter_Tests: XCTestCase {
     func test_BerlinClockConverter_seconds_shouldBeFalse() {
         
         // Given
-            let converter = BerlinClockConverter()
-            let date =  Date().withSeconds(seconds: 1)
-          
+        let converter = BerlinClockConverter()
+        let date =  Date().withSeconds(seconds: 1)
+        
         
         // When
-            let berlinClockResult = converter.convert(date: date)
+        let berlinClockResult = converter.convert(date: date)
         
         
         // Then
-            XCTAssertEqual(Lights.off, berlinClockResult.seconds)
+        XCTAssertEqual(Lights.off, berlinClockResult.seconds)
         
     }
     
@@ -42,17 +42,33 @@ final class BerlinClockConverter_Tests: XCTestCase {
     func test_BerlinClockConverter_seconds_shouldBeTrue() {
         
         // Given
-            let converter = BerlinClockConverter()
-            let date =  Date().withSeconds(seconds: 0)
-          
+        let converter = BerlinClockConverter()
+        let date =  Date().withSeconds(seconds: 0)
+        
         
         // When
-            let berlinClockResult = converter.convert(date: date)
+        let berlinClockResult = converter.convert(date: date)
         
         
         // Then
-            XCTAssertEqual(Lights.yellow, berlinClockResult.seconds)
+        XCTAssertEqual(Lights.yellow, berlinClockResult.seconds)
         
     }
-
+    
+    func test_BerlinClockConverter_shouldReturnListAllTopHoursLightsOff() {
+        
+        // Given
+        let converter = BerlinClockConverter()
+        let date = Date().withHours(hours: 3)
+        
+        // When
+        let berlinClockResult = converter.convert(date: date)
+        
+        //Then
+        berlinClockResult.topHours.forEach {
+            XCTAssertEqual(Lights.off, $0)
+        }
+        
+    }
+    
 }

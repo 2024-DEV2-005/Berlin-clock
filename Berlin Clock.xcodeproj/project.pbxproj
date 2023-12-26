@@ -83,7 +83,6 @@
 		C30742732B3B3CF800F0B96A /* Berlin Clock */ = {
 			isa = PBXGroup;
 			children = (
-				C307429C2B3B58A600F0B96A /* Extensions */,
 				C30742992B3B4D9800F0B96A /* Protocols */,
 				C30742852B3B430500F0B96A /* Models */,
 				C30742882B3B4A3000F0B96A /* BerlinClockConverter.swift */,
@@ -114,6 +113,7 @@
 		C307428F2B3B4D5000F0B96A /* Berlin ClockTests */ = {
 			isa = PBXGroup;
 			children = (
+				C307429C2B3B58A600F0B96A /* Extensions */,
 				C30742902B3B4D5000F0B96A /* Berlin_ClockTests.swift */,
 				C30742972B3B4D8600F0B96A /* BerlinClockConverter_Tests.swift */,
 			);
