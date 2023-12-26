@@ -56,18 +56,3 @@ final class BerlinClockConverter_Tests: XCTestCase {
     }
 
 }
-
-extension Date {
-    func withSeconds(seconds: Int) -> Date {
-        
-        let calendar = Calendar.current
-        let date =  calendar.date(bySettingHour: 0,
-                             minute: 0,
-                             second: seconds,
-                             of: self,
-                             direction: .backward)!
-        
-        return date
-        
-    }
-}

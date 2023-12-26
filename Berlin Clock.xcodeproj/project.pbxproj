@@ -16,6 +16,7 @@
 		C30742912B3B4D5000F0B96A /* Berlin_ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30742902B3B4D5000F0B96A /* Berlin_ClockTests.swift */; };
 		C30742982B3B4D8600F0B96A /* BerlinClockConverter_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30742972B3B4D8600F0B96A /* BerlinClockConverter_Tests.swift */; };
 		C307429B2B3B4DC700F0B96A /* BerlinClockConvertingTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = C307429A2B3B4DC700F0B96A /* BerlinClockConvertingTime.swift */; };
+		C307429E2B3B58B200F0B96A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = C307429D2B3B58B200F0B96A /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		C30742902B3B4D5000F0B96A /* Berlin_ClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Berlin_ClockTests.swift; sourceTree = "<group>"; };
 		C30742972B3B4D8600F0B96A /* BerlinClockConverter_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinClockConverter_Tests.swift; sourceTree = "<group>"; };
 		C307429A2B3B4DC700F0B96A /* BerlinClockConvertingTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinClockConvertingTime.swift; sourceTree = "<group>"; };
+		C307429D2B3B58B200F0B96A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		C30742732B3B3CF800F0B96A /* Berlin Clock */ = {
 			isa = PBXGroup;
 			children = (
+				C307429C2B3B58A600F0B96A /* Extensions */,
 				C30742992B3B4D9800F0B96A /* Protocols */,
 				C30742852B3B430500F0B96A /* Models */,
 				C30742882B3B4A3000F0B96A /* BerlinClockConverter.swift */,
@@ -123,6 +126,14 @@
 				C307429A2B3B4DC700F0B96A /* BerlinClockConvertingTime.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C307429C2B3B58A600F0B96A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C307429D2B3B58B200F0B96A /* Date.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C30742772B3B3CF800F0B96A /* ContentView.swift in Sources */,
+				C307429E2B3B58B200F0B96A /* Date.swift in Sources */,
 				C307429B2B3B4DC700F0B96A /* BerlinClockConvertingTime.swift in Sources */,
 				C30742892B3B4A3000F0B96A /* BerlinClockConverter.swift in Sources */,
 				C30742752B3B3CF800F0B96A /* Berlin_ClockApp.swift in Sources */,
