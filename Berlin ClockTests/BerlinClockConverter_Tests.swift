@@ -87,4 +87,21 @@ final class BerlinClockConverter_Tests: XCTestCase {
         
     }
     
+    func test_BerlinClockConverter_shouldReturnListTwoTopHoursLightsOnTwoTopHoursOff() {
+        
+        // Given
+        let converter = BerlinClockConverter()
+        let date = Date().withHours(hours: 11)
+        
+        // When
+        let berlinClockResult = converter.convert(date: date)
+        
+        //Then
+        XCTAssertEqual(Lights.red, berlinClockResult.topHours[0])
+        XCTAssertEqual(Lights.red, berlinClockResult.topHours[1])
+        XCTAssertEqual(Lights.off, berlinClockResult.topHours[2])
+        XCTAssertEqual(Lights.off, berlinClockResult.topHours[3])
+        
+    }
+    
 }
