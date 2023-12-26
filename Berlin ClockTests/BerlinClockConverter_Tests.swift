@@ -26,24 +26,33 @@ final class BerlinClockConverter_Tests: XCTestCase {
         
         // Given
             let converter = BerlinClockConverter()
-            let calendar = Calendar.current
-            let now = Date()
-            let date =  calendar.date(bySettingHour: 0,
-                                 minute: 0,
-                                 second: 1,
-                                 of: now,
-                                 direction: .backward)!
+            let date =  Date().withSeconds(seconds: 1)
+          
         
         // When
-        
-        let berlinClockResult = converter.convert(date: date)
+            let berlinClockResult = converter.convert(date: date)
         
         
         // Then
+            XCTAssertEqual(Lights.off, berlinClockResult.seconds)
         
-        XCTAssertEqual(Lights.off, berlinClockResult.seconds)
     }
 
+}
 
 
+
+extension Date {
+    func withSeconds(seconds: Int) -> Date {
+        
+        let calendar = Calendar.current
+        let date =  calendar.date(bySettingHour: 0,
+                             minute: 0,
+                             second: seconds,
+                             of: self,
+                             direction: .backward)!
+        
+        return date
+        
+    }
 }
