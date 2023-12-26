@@ -11,6 +11,7 @@
 		C30742772B3B3CF800F0B96A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30742762B3B3CF800F0B96A /* ContentView.swift */; };
 		C30742792B3B3CF900F0B96A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30742782B3B3CF900F0B96A /* Assets.xcassets */; };
 		C307427C2B3B3CF900F0B96A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C307427B2B3B3CF900F0B96A /* Preview Assets.xcassets */; };
+		C30742872B3B431600F0B96A /* BerlinClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30742862B3B431600F0B96A /* BerlinClock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		C30742762B3B3CF800F0B96A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C30742782B3B3CF900F0B96A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C307427B2B3B3CF900F0B96A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C30742862B3B431600F0B96A /* BerlinClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinClock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		C30742732B3B3CF800F0B96A /* Berlin Clock */ = {
 			isa = PBXGroup;
 			children = (
+				C30742852B3B430500F0B96A /* Models */,
 				C30742742B3B3CF800F0B96A /* Berlin_ClockApp.swift */,
 				C30742762B3B3CF800F0B96A /* ContentView.swift */,
 				C30742782B3B3CF900F0B96A /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				C307427B2B3B3CF900F0B96A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C30742852B3B430500F0B96A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C30742862B3B431600F0B96A /* BerlinClock.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				C30742772B3B3CF800F0B96A /* ContentView.swift in Sources */,
 				C30742752B3B3CF800F0B96A /* Berlin_ClockApp.swift in Sources */,
+				C30742872B3B431600F0B96A /* BerlinClock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
