@@ -12,6 +12,7 @@
 		C30742792B3B3CF900F0B96A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30742782B3B3CF900F0B96A /* Assets.xcassets */; };
 		C307427C2B3B3CF900F0B96A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C307427B2B3B3CF900F0B96A /* Preview Assets.xcassets */; };
 		C30742872B3B431600F0B96A /* BerlinClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30742862B3B431600F0B96A /* BerlinClock.swift */; };
+		C30742892B3B4A3000F0B96A /* BerlinClockConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30742882B3B4A3000F0B96A /* BerlinClockConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		C30742782B3B3CF900F0B96A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C307427B2B3B3CF900F0B96A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C30742862B3B431600F0B96A /* BerlinClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinClock.swift; sourceTree = "<group>"; };
+		C30742882B3B4A3000F0B96A /* BerlinClockConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinClockConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				C30742762B3B3CF800F0B96A /* ContentView.swift */,
 				C30742782B3B3CF900F0B96A /* Assets.xcassets */,
 				C307427A2B3B3CF900F0B96A /* Preview Content */,
+				C30742882B3B4A3000F0B96A /* BerlinClockConverter.swift */,
 			);
 			path = "Berlin Clock";
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C30742772B3B3CF800F0B96A /* ContentView.swift in Sources */,
+				C30742892B3B4A3000F0B96A /* BerlinClockConverter.swift in Sources */,
 				C30742752B3B3CF800F0B96A /* Berlin_ClockApp.swift in Sources */,
 				C30742872B3B431600F0B96A /* BerlinClock.swift in Sources */,
 			);
