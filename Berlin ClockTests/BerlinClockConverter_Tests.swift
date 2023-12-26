@@ -6,6 +6,11 @@
 //
 
 import XCTest
+@testable import Berlin_Clock
+
+// Naming Structure: tests_UnitOfWork_StateUnderTest_ExpectedBehavior
+
+// Testing Structure: Given, When, Then
 
 final class BerlinClockConverter_Tests: XCTestCase {
 
@@ -16,20 +21,29 @@ final class BerlinClockConverter_Tests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func test_BerlinClockConverter_seconds_shouldBeFalse() {
+        
+        // Given
+            let converter = BerlinClockConverter()
+            let calendar = Calendar.current
+            let now = Date()
+            let date =  calendar.date(bySettingHour: 0,
+                                 minute: 0,
+                                 second: 1,
+                                 of: now,
+                                 direction: .backward)!
+        
+        // When
+        
+        let berlinClockResult = converter.convert(date: date)
+        
+        
+        // Then
+        
+        XCTAssertEqual(Lights.off, berlinClockResult.seconds)
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+
 
 }
