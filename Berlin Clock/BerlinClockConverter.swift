@@ -7,11 +7,6 @@
 
 import Foundation
 
-protocol BerlinClockConvertingTime {
-    func convert(date: Date) -> BerlinClock
-}
-
-
 class BerlinClockConverter: BerlinClockConvertingTime {
     
     func convert(date: Date) -> BerlinClock {
