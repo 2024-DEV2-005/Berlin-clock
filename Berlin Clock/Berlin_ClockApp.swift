@@ -11,7 +11,9 @@ import SwiftUI
 struct Berlin_ClockApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BerlinClockView(berlinClockViewModel: BerlinClockViewModel(dateProvider: {
+                Date()
+            }, converter: BerlinClockConverter()))
         }
     }
 }
