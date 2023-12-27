@@ -188,7 +188,23 @@ final class BerlinClockConverter_Tests: XCTestCase {
         XCTAssertEqual(berlinClockResult.topMinutes[8], Lights.off)
         XCTAssertEqual(berlinClockResult.topMinutes[9], Lights.off)
         XCTAssertEqual(berlinClockResult.topMinutes[10], Lights.off)
-
+    }
+    
+    
+    func test_BerlinClockConverter_shouldReturnListBottomMinutesLightsOff() {
+        
+        // Given
+        let converter = BerlinClockConverter()
+        let date = Date().withMinutes(minutes: 0)
+        
+        // When
+        let berlinClockResult = converter.convert(date: date)
+        
+        //Then
+        XCTAssertEqual(berlinClockResult.bottomMinutes[0], Lights.off)
+        XCTAssertEqual(berlinClockResult.bottomMinutes[1], Lights.off)
+        XCTAssertEqual(berlinClockResult.bottomMinutes[2], Lights.off)
+        XCTAssertEqual(berlinClockResult.bottomMinutes[3], Lights.off)
     }
     
 }
