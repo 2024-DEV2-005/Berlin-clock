@@ -17,6 +17,7 @@ struct LightsView: View {
                 LightBlockView(light: tuple.element)
             }
         }
+        .frame(maxWidth: 260)
         .padding(.top)
     }
 }
