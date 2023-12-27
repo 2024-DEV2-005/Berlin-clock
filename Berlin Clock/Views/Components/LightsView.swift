@@ -17,7 +17,7 @@ struct LightsView: View {
                 LightsBlockView(light: light)
             }
         }
-        .padding()
+        .padding(.top)
     }
 }
 
