@@ -31,6 +31,17 @@ extension Date {
                              direction: .backward)!
         
         return date
+    }
+    
+    func withMinutes(minutes: Int) -> Date {
         
+        let calendar = Calendar.current
+        let date =  calendar.date(bySettingHour: 0,
+                             minute: minutes,
+                             second: 0,
+                             of: self,
+                             direction: .backward)!
+        
+        return date
     }
 }
