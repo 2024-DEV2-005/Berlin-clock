@@ -13,6 +13,8 @@ struct BerlinClockView: View {
         
         VStack {
             SecondsView(light: berlinClockViewModel.berlinClock.seconds)
+            LightsView(lights: berlinClockViewModel.berlinClock.topHours)
+           
         }
     }
 }

@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct LightsBlockView: View {
+    var light: Lights
+    
     var body: some View {
         Rectangle()
             .frame(width: 60, height: 40)
+            .foregroundStyle(light.color)
     }
 }
 
 #Preview {
-    LightsBlockView()
+    LightsBlockView(light: Lights.yellow)
 }
