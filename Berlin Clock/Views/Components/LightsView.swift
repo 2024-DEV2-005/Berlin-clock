@@ -11,10 +11,10 @@ struct LightsView: View {
     var lights: [Light]
     
     var body: some View {
-        
+        let lightsWithIndex = Array(lights.enumerated())
         HStack {
-            ForEach(lights, id: \.hashValue) { light in
-                LightBlockView(light: light)
+            ForEach(lightsWithIndex, id: \.offset) { tuple in
+                LightBlockView(light: tuple.element)
             }
         }
         .padding(.top)

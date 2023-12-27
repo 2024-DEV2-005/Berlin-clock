@@ -13,25 +13,15 @@ import XCTest
 // Testing Structure: Given, When, Then
 
 final class BerlinClockConverter_Tests: XCTestCase {
-    
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-    
+
     func test_BerlinClockConverter_seconds_shouldBeFalse() {
         
         // Given
         let converter = BerlinClockConverter()
         let date =  Date().withSeconds(seconds: 1)
         
-        
         // When
         let berlinClockResult = converter.convert(date: date)
-        
         
         // Then
         XCTAssertEqual(Light.off, berlinClockResult.seconds)
@@ -45,10 +35,8 @@ final class BerlinClockConverter_Tests: XCTestCase {
         let converter = BerlinClockConverter()
         let date =  Date().withSeconds(seconds: 0)
         
-        
         // When
         let berlinClockResult = converter.convert(date: date)
-        
         
         // Then
         XCTAssertEqual(Light.yellow, berlinClockResult.seconds)
@@ -64,7 +52,7 @@ final class BerlinClockConverter_Tests: XCTestCase {
         // When
         let berlinClockResult = converter.convert(date: date)
         
-        //Then
+        // Then
         berlinClockResult.topHours.forEach {
             XCTAssertEqual(Light.off, $0)
         }
@@ -80,7 +68,7 @@ final class BerlinClockConverter_Tests: XCTestCase {
         // When
         let berlinClockResult = converter.convert(date: date)
         
-        //Then
+        // Then
         berlinClockResult.topHours.forEach {
             XCTAssertEqual(Light.red, $0)
         }
@@ -96,7 +84,7 @@ final class BerlinClockConverter_Tests: XCTestCase {
         // When
         let berlinClockResult = converter.convert(date: date)
         
-        //Then
+        // Then
         XCTAssertEqual(Light.red, berlinClockResult.topHours[0])
         XCTAssertEqual(Light.red, berlinClockResult.topHours[1])
         XCTAssertEqual(Light.off, berlinClockResult.topHours[2])
@@ -113,7 +101,7 @@ final class BerlinClockConverter_Tests: XCTestCase {
         // When
         let berlinClockResult = converter.convert(date: date)
         
-        //Then
+        // Then
         XCTAssertEqual(Light.red, berlinClockResult.bottomHours[0])
         XCTAssertEqual(Light.off, berlinClockResult.bottomHours[1])
         XCTAssertEqual(Light.off, berlinClockResult.bottomHours[2])
@@ -130,7 +118,7 @@ final class BerlinClockConverter_Tests: XCTestCase {
         // When
         let berlinClockResult = converter.convert(date: date)
         
-        //Then
+        // Then
         XCTAssertEqual(Light.red, berlinClockResult.bottomHours[0])
         XCTAssertEqual(Light.red, berlinClockResult.bottomHours[1])
         XCTAssertEqual(Light.off, berlinClockResult.bottomHours[2])
@@ -146,7 +134,7 @@ final class BerlinClockConverter_Tests: XCTestCase {
         // When
         let berlinClockResult = converter.convert(date: date)
         
-        //Then
+        // Then
         berlinClockResult.topMinutes.forEach {
             XCTAssertEqual(Light.off, $0)
         }
@@ -161,7 +149,7 @@ final class BerlinClockConverter_Tests: XCTestCase {
         // When
         let berlinClockResult = converter.convert(date: date)
         
-        //Then
+        // Then
         berlinClockResult.topMinutes.forEach {
             XCTAssertTrue($0 == Light.yellow || $0 == Light.red)
         }
@@ -176,7 +164,7 @@ final class BerlinClockConverter_Tests: XCTestCase {
         // When
         let berlinClockResult = converter.convert(date: date)
         
-        //Then
+        // Then
         XCTAssertEqual(berlinClockResult.topMinutes[0], Light.yellow)
         XCTAssertEqual(berlinClockResult.topMinutes[1], Light.yellow)
         XCTAssertEqual(berlinClockResult.topMinutes[2], Light.red)
@@ -200,7 +188,7 @@ final class BerlinClockConverter_Tests: XCTestCase {
         // When
         let berlinClockResult = converter.convert(date: date)
         
-        //Then
+        // Then
         berlinClockResult.bottomMinutes.forEach {
             XCTAssertEqual($0, Light.off)
         }
@@ -216,10 +204,9 @@ final class BerlinClockConverter_Tests: XCTestCase {
         // When
         let berlinClockResult = converter.convert(date: date)
         
-        //Then
+        // Then
         berlinClockResult.bottomMinutes.forEach {
             XCTAssertEqual($0, Light.yellow)
         }
     }
-    
 }

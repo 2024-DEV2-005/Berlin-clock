@@ -11,7 +11,6 @@ class BerlinClockConverter: BerlinClockConvertingTime {
     
     func convert(date: Date) -> BerlinClock {
         let calendar = Calendar.current
-        
         let secondsIsOn = calendar.component(.second, from: date) % 2 == 0
         let topHours = convertHours(hourLights: calendar.component(.hour, from: date) / 5)
         let bottomHours = convertHours(hourLights: calendar.component(.hour, from: date) % 5)
@@ -69,4 +68,3 @@ class BerlinClockConverter: BerlinClockConvertingTime {
     }
     
 }
-
