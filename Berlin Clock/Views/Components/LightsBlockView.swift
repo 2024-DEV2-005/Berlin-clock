@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct lightsBlockView: View {
+struct LightsBlockView: View {
     var body: some View {
         Rectangle()
-            .frame(width: 60, height: 40 )
+            .frame(width: 60, height: 40)
     }
 }
 
 #Preview {
-    lightsBlockView()
+    LightsBlockView()
 }

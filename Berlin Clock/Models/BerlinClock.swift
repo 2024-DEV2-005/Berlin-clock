@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import SwiftUI
 
 struct BerlinClock {
     let seconds: Lights
@@ -20,4 +20,17 @@ enum Lights {
     case yellow
     case red
     case off
+}
+
+extension Lights {
+    var color: Color {
+        switch self {
+        case .off:
+            return Color.gray
+        case .red:
+            return Color.red
+        case .yellow:
+            return Color.yellow
+        }
+    }
 }

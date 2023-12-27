@@ -7,14 +7,16 @@
 
 import SwiftUI
 
-struct secondsView: View {
+struct SecondsView: View {
+    var light: Lights
     var body: some View {
         Circle()
             .frame(width: 100)
+            .foregroundStyle(light.color)
             
     }
 }
 
 #Preview {
-    secondsView()
+    SecondsView(light: Lights.yellow)
 }
