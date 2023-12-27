@@ -9,16 +9,21 @@ import Foundation
 
 class BerlinClockViewModel {
     
-    @Published var berlinClock : BerlinClock
+    var berlinClock: BerlinClock
     let converter: BerlinClockConverter
     let dateProvider: () -> Date
-    
+    private var timer: Timer?
     
     init(dateProvider: @escaping () -> Date, converter: BerlinClockConverter) {
         self.dateProvider = dateProvider
         self.converter = converter
-        berlinClock = converter.convert(date: self.dateProvider())
+        self.berlinClock = converter.convert(date: self.dateProvider())
+        self.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+            self.update()
+        }
     }
-
-
+    
+    private func update() {
+        self.berlinClock = converter.convert(date: self.dateProvider())
+    }
 }
