@@ -34,7 +34,7 @@ final class BerlinClockConverter_Tests: XCTestCase {
         
         
         // Then
-        XCTAssertEqual(Lights.off, berlinClockResult.seconds)
+        XCTAssertEqual(Light.off, berlinClockResult.seconds)
         
     }
     
@@ -51,7 +51,7 @@ final class BerlinClockConverter_Tests: XCTestCase {
         
         
         // Then
-        XCTAssertEqual(Lights.yellow, berlinClockResult.seconds)
+        XCTAssertEqual(Light.yellow, berlinClockResult.seconds)
         
     }
     
@@ -66,7 +66,7 @@ final class BerlinClockConverter_Tests: XCTestCase {
         
         //Then
         berlinClockResult.topHours.forEach {
-            XCTAssertEqual(Lights.off, $0)
+            XCTAssertEqual(Light.off, $0)
         }
         
     }
@@ -82,7 +82,7 @@ final class BerlinClockConverter_Tests: XCTestCase {
         
         //Then
         berlinClockResult.topHours.forEach {
-            XCTAssertEqual(Lights.red, $0)
+            XCTAssertEqual(Light.red, $0)
         }
         
     }
@@ -97,10 +97,10 @@ final class BerlinClockConverter_Tests: XCTestCase {
         let berlinClockResult = converter.convert(date: date)
         
         //Then
-        XCTAssertEqual(Lights.red, berlinClockResult.topHours[0])
-        XCTAssertEqual(Lights.red, berlinClockResult.topHours[1])
-        XCTAssertEqual(Lights.off, berlinClockResult.topHours[2])
-        XCTAssertEqual(Lights.off, berlinClockResult.topHours[3])
+        XCTAssertEqual(Light.red, berlinClockResult.topHours[0])
+        XCTAssertEqual(Light.red, berlinClockResult.topHours[1])
+        XCTAssertEqual(Light.off, berlinClockResult.topHours[2])
+        XCTAssertEqual(Light.off, berlinClockResult.topHours[3])
         
     }
     
@@ -114,10 +114,10 @@ final class BerlinClockConverter_Tests: XCTestCase {
         let berlinClockResult = converter.convert(date: date)
         
         //Then
-        XCTAssertEqual(Lights.red, berlinClockResult.bottomHours[0])
-        XCTAssertEqual(Lights.off, berlinClockResult.bottomHours[1])
-        XCTAssertEqual(Lights.off, berlinClockResult.bottomHours[2])
-        XCTAssertEqual(Lights.off, berlinClockResult.bottomHours[3])
+        XCTAssertEqual(Light.red, berlinClockResult.bottomHours[0])
+        XCTAssertEqual(Light.off, berlinClockResult.bottomHours[1])
+        XCTAssertEqual(Light.off, berlinClockResult.bottomHours[2])
+        XCTAssertEqual(Light.off, berlinClockResult.bottomHours[3])
         
     }
     
@@ -131,10 +131,10 @@ final class BerlinClockConverter_Tests: XCTestCase {
         let berlinClockResult = converter.convert(date: date)
         
         //Then
-        XCTAssertEqual(Lights.red, berlinClockResult.bottomHours[0])
-        XCTAssertEqual(Lights.red, berlinClockResult.bottomHours[1])
-        XCTAssertEqual(Lights.off, berlinClockResult.bottomHours[2])
-        XCTAssertEqual(Lights.off, berlinClockResult.bottomHours[3])
+        XCTAssertEqual(Light.red, berlinClockResult.bottomHours[0])
+        XCTAssertEqual(Light.red, berlinClockResult.bottomHours[1])
+        XCTAssertEqual(Light.off, berlinClockResult.bottomHours[2])
+        XCTAssertEqual(Light.off, berlinClockResult.bottomHours[3])
     }
     
     func test_BerlinClockConverter_shouldReturnListTopMinutesWithLightsOff() {
@@ -148,7 +148,7 @@ final class BerlinClockConverter_Tests: XCTestCase {
         
         //Then
         berlinClockResult.topMinutes.forEach {
-            XCTAssertEqual(Lights.off, $0)
+            XCTAssertEqual(Light.off, $0)
         }
     }
     
@@ -163,7 +163,7 @@ final class BerlinClockConverter_Tests: XCTestCase {
         
         //Then
         berlinClockResult.topMinutes.forEach {
-            XCTAssertTrue($0 == Lights.yellow || $0 == Lights.red)
+            XCTAssertTrue($0 == Light.yellow || $0 == Light.red)
         }
     }
     
@@ -177,17 +177,17 @@ final class BerlinClockConverter_Tests: XCTestCase {
         let berlinClockResult = converter.convert(date: date)
         
         //Then
-        XCTAssertEqual(berlinClockResult.topMinutes[0], Lights.yellow)
-        XCTAssertEqual(berlinClockResult.topMinutes[1], Lights.yellow)
-        XCTAssertEqual(berlinClockResult.topMinutes[2], Lights.red)
-        XCTAssertEqual(berlinClockResult.topMinutes[3], Lights.yellow)
-        XCTAssertEqual(berlinClockResult.topMinutes[4], Lights.yellow)
-        XCTAssertEqual(berlinClockResult.topMinutes[5], Lights.red)
-        XCTAssertEqual(berlinClockResult.topMinutes[6], Lights.off)
-        XCTAssertEqual(berlinClockResult.topMinutes[7], Lights.off)
-        XCTAssertEqual(berlinClockResult.topMinutes[8], Lights.off)
-        XCTAssertEqual(berlinClockResult.topMinutes[9], Lights.off)
-        XCTAssertEqual(berlinClockResult.topMinutes[10], Lights.off)
+        XCTAssertEqual(berlinClockResult.topMinutes[0], Light.yellow)
+        XCTAssertEqual(berlinClockResult.topMinutes[1], Light.yellow)
+        XCTAssertEqual(berlinClockResult.topMinutes[2], Light.red)
+        XCTAssertEqual(berlinClockResult.topMinutes[3], Light.yellow)
+        XCTAssertEqual(berlinClockResult.topMinutes[4], Light.yellow)
+        XCTAssertEqual(berlinClockResult.topMinutes[5], Light.red)
+        XCTAssertEqual(berlinClockResult.topMinutes[6], Light.off)
+        XCTAssertEqual(berlinClockResult.topMinutes[7], Light.off)
+        XCTAssertEqual(berlinClockResult.topMinutes[8], Light.off)
+        XCTAssertEqual(berlinClockResult.topMinutes[9], Light.off)
+        XCTAssertEqual(berlinClockResult.topMinutes[10], Light.off)
     }
     
     
@@ -202,7 +202,7 @@ final class BerlinClockConverter_Tests: XCTestCase {
         
         //Then
         berlinClockResult.bottomMinutes.forEach {
-            XCTAssertEqual($0, Lights.off)
+            XCTAssertEqual($0, Light.off)
         }
     }
     
@@ -218,7 +218,7 @@ final class BerlinClockConverter_Tests: XCTestCase {
         
         //Then
         berlinClockResult.bottomMinutes.forEach {
-            XCTAssertEqual($0, Lights.yellow)
+            XCTAssertEqual($0, Light.yellow)
         }
     }
     

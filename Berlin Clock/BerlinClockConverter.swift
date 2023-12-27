@@ -19,7 +19,7 @@ class BerlinClockConverter: BerlinClockConvertingTime {
         let bottomMinutes = convertBottomMinutes(minutes: calendar.component(.minute, from: date) % 5)
         
         return BerlinClock(
-            seconds: secondsIsOn ? Lights.yellow : Lights.off,
+            seconds: secondsIsOn ? Light.yellow : Light.off,
             topHours: topHours,
             bottomHours: bottomHours,
             topMinutes: topMinutes,
@@ -27,42 +27,42 @@ class BerlinClockConverter: BerlinClockConvertingTime {
         )
     }
     
-    private func convertHours(hourLights: Int) -> [Lights] {
-        var lightsList: [Lights] = []
+    private func convertHours(hourLights: Int) -> [Light] {
+        var lightsList: [Light] = []
         
         for index in 1...4 {
             lightsList.append(
-                (index <= hourLights) ? Lights.red : Lights.off
+                (index <= hourLights) ? Light.red : Light.off
             )
         }
         return lightsList
     }
     
-    private func convertTopMinutes(minutes: Int) -> [Lights] {
-        var lightsList: [Lights] = []
+    private func convertTopMinutes(minutes: Int) -> [Light] {
+        var lightsList: [Light] = []
         
         for index in 1...11 {
             if (index <= minutes) {
                 if (index % 3 == 0) {
-                    lightsList.append(Lights.red)
+                    lightsList.append(Light.red)
                 } else {
-                    lightsList.append(Lights.yellow)
+                    lightsList.append(Light.yellow)
                 }
             
             } else {
-                lightsList.append(Lights.off)
+                lightsList.append(Light.off)
             }
  
         }
         return lightsList
     }
     
-    private func convertBottomMinutes(minutes: Int) -> [Lights] {
-        var lightsList:[Lights] = []
+    private func convertBottomMinutes(minutes: Int) -> [Light] {
+        var lightsList:[Light] = []
         
         for index in 1...4 {
             lightsList.append(
-                index <= minutes ? Lights.yellow : Lights.off
+                index <= minutes ? Light.yellow : Light.off
             )
         }
         return lightsList
