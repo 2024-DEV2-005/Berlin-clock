@@ -15,8 +15,10 @@ struct BerlinClockView: View {
             SecondsView(light: berlinClockViewModel.berlinClock.seconds)
             LightsView(lights: berlinClockViewModel.berlinClock.topHours)
             LightsView(lights: berlinClockViewModel.berlinClock.bottomHours)
+            LightsView(lights: berlinClockViewModel.berlinClock.topMinutes)
            
         }
+        .padding()
     }
 }
 

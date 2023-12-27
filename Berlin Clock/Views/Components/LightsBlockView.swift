@@ -12,7 +12,7 @@ struct LightsBlockView: View {
     
     var body: some View {
         Rectangle()
-            .frame(width: 60, height: 40)
+            .frame(maxWidth: 60, maxHeight: 40)
             .foregroundStyle(light.color)
     }
 }
