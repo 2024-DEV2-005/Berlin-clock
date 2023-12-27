@@ -14,7 +14,7 @@ struct LightsView: View {
         
         HStack {
             ForEach(lights, id: \.hashValue) { light in
-                LightsBlockView(light: light)
+                LightBlockView(light: light)
             }
         }
         .padding(.top)

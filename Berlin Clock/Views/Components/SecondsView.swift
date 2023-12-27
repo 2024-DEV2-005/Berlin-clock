@@ -13,7 +13,6 @@ struct SecondsView: View {
         Circle()
             .frame(width: 100)
             .foregroundStyle(light.color)
-            
     }
 }
 

@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct LightsBlockView: View {
+struct LightBlockView: View {
     var light: Lights
     
     var body: some View {
-        Rectangle()
+        RoundedRectangle(cornerRadius: 5)
             .frame(maxWidth: 60, maxHeight: 40)
             .foregroundStyle(light.color)
     }
 }
 
 #Preview {
-    LightsBlockView(light: Lights.yellow)
+    LightBlockView(light: Lights.yellow)
 }
