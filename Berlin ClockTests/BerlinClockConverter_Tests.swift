@@ -152,4 +152,19 @@ final class BerlinClockConverter_Tests: XCTestCase {
         }
     }
     
+    func test_BerlinClockConverter_shouldReturnListTopMinutesWithLightsOn() {
+        
+        // Given
+        let converter = BerlinClockConverter()
+        let date = Date().withMinutes(minutes: 55)
+        
+        // When
+        let berlinClockResult = converter.convert(date: date)
+        
+        //Then
+        berlinClockResult.topMinutes.forEach {
+            XCTAssertTrue($0 == Lights.yellow || $0 == Lights.red)
+        }
+    }
+    
 }

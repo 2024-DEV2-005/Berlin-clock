@@ -16,12 +16,12 @@ class BerlinClockConverter: BerlinClockConvertingTime {
         let topHours = convertHours(hourLights: calendar.component(.hour, from: date) / 5)
         let bottomHours = convertHours(hourLights: calendar.component(.hour, from: date) % 5)
         let topMinutes = convertTopMinutes(minutes: calendar.component(.minute, from: date) / 5)
-    
+        
         return BerlinClock(
             seconds: secondsIsOn ? Lights.yellow : Lights.off,
             topHours: topHours,
             bottomHours: bottomHours,
-            topMinutes: [Lights.off],
+            topMinutes: topMinutes,
             bottomMinutes: [Lights.off]
         )
     }
@@ -41,12 +41,17 @@ class BerlinClockConverter: BerlinClockConvertingTime {
         var lightsList: [Lights] = []
         
         for index in 1...11 {
-            lightsList.append(
-    
-                index <= minutes ? 
-                (index % 3 == 0 ? Lights.red : Lights.yellow) : Lights.off
-                
-            )
+            if (index <= minutes) {
+                if (index % 3 == 0) {
+                    lightsList.append(Lights.red)
+                } else {
+                    lightsList.append(Lights.yellow)
+                }
+            
+            } else {
+                lightsList.append(Lights.off)
+            }
+ 
         }
         return lightsList
     }
