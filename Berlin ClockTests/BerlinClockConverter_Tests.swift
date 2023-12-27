@@ -207,4 +207,21 @@ final class BerlinClockConverter_Tests: XCTestCase {
         XCTAssertEqual(berlinClockResult.bottomMinutes[3], Lights.off)
     }
     
+    
+    func test_BerlinClockConverter_shouldReturnListBottomMinutesLightsOn() {
+        
+        // Given
+        let converter = BerlinClockConverter()
+        let date = Date().withMinutes(minutes: 4)
+        
+        // When
+        let berlinClockResult = converter.convert(date: date)
+        
+        //Then
+        XCTAssertEqual(berlinClockResult.bottomMinutes[0], Lights.yellow)
+        XCTAssertEqual(berlinClockResult.bottomMinutes[1], Lights.yellow)
+        XCTAssertEqual(berlinClockResult.bottomMinutes[2], Lights.yellow)
+        XCTAssertEqual(berlinClockResult.bottomMinutes[3], Lights.yellow)
+    }
+    
 }
