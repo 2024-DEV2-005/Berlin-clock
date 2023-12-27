@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SecondsView: View {
-    var light: Lights
+    var light: Light
     var body: some View {
         Circle()
             .frame(width: 100)
@@ -17,5 +17,5 @@ struct SecondsView: View {
 }
 
 #Preview {
-    SecondsView(light: Lights.yellow)
+    SecondsView(light: Light.yellow)
 }

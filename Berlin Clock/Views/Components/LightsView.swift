@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LightsView: View {
-    var lights: [Lights]
+    var lights: [Light]
     
     var body: some View {
         
@@ -22,5 +22,5 @@ struct LightsView: View {
 }
 
 #Preview {
-    LightsView(lights: [Lights.red])
+    LightsView(lights: [Light.red])
 }

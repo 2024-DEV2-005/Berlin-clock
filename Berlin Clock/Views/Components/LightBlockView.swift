@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LightBlockView: View {
-    var light: Lights
+    var light: Light
     
     var body: some View {
         RoundedRectangle(cornerRadius: 5)
@@ -18,5 +18,5 @@ struct LightBlockView: View {
 }
 
 #Preview {
-    LightBlockView(light: Lights.yellow)
+    LightBlockView(light: Light.yellow)
 }

@@ -29,19 +29,19 @@ final class BerlinClockViewModel_Tests: XCTestCase {
         // Then
         let berlinClock = viewModel.berlinClock
         
-        XCTAssertEqual(Lights.yellow, berlinClock.seconds)
+        XCTAssertEqual(Light.yellow, berlinClock.seconds)
         
         berlinClock.topMinutes.forEach {
-            XCTAssertEqual(Lights.off, $0)
+            XCTAssertEqual(Light.off, $0)
         }  
         berlinClock.bottomMinutes.forEach {
-            XCTAssertEqual(Lights.off, $0)
+            XCTAssertEqual(Light.off, $0)
         }   
         berlinClock.topHours.forEach {
-            XCTAssertEqual(Lights.off, $0)
+            XCTAssertEqual(Light.off, $0)
         }
         berlinClock.bottomHours.forEach {
-            XCTAssertEqual(Lights.off, $0)
+            XCTAssertEqual(Light.off, $0)
         }
     }
 }

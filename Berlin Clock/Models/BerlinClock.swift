@@ -9,20 +9,20 @@ import Foundation
 import SwiftUI
 
 struct BerlinClock {
-    let seconds: Lights
-    let topHours: [Lights]
-    let bottomHours: [Lights]
-    let topMinutes: [Lights]
-    let bottomMinutes: [Lights]
+    let seconds: Light
+    let topHours: [Light]
+    let bottomHours: [Light]
+    let topMinutes: [Light]
+    let bottomMinutes: [Light]
 }
 
-enum Lights {
+enum Light {
     case yellow
     case red
     case off
 }
 
-extension Lights {
+extension Light {
     var color: Color {
         switch self {
         case .off:
