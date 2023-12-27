@@ -167,4 +167,28 @@ final class BerlinClockConverter_Tests: XCTestCase {
         }
     }
     
+    func test_BerlinClockConverter_shouldReturnListTopMinutesWithHalfLightsOn() {
+        
+        // Given
+        let converter = BerlinClockConverter()
+        let date = Date().withMinutes(minutes: 30)
+        
+        // When
+        let berlinClockResult = converter.convert(date: date)
+        
+        //Then
+        XCTAssertEqual(berlinClockResult.topMinutes[0], Lights.yellow)
+        XCTAssertEqual(berlinClockResult.topMinutes[1], Lights.yellow)
+        XCTAssertEqual(berlinClockResult.topMinutes[2], Lights.red)
+        XCTAssertEqual(berlinClockResult.topMinutes[3], Lights.yellow)
+        XCTAssertEqual(berlinClockResult.topMinutes[4], Lights.yellow)
+        XCTAssertEqual(berlinClockResult.topMinutes[5], Lights.red)
+        XCTAssertEqual(berlinClockResult.topMinutes[6], Lights.off)
+        XCTAssertEqual(berlinClockResult.topMinutes[7], Lights.off)
+        XCTAssertEqual(berlinClockResult.topMinutes[8], Lights.off)
+        XCTAssertEqual(berlinClockResult.topMinutes[9], Lights.off)
+        XCTAssertEqual(berlinClockResult.topMinutes[10], Lights.off)
+
+    }
+    
 }
