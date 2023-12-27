@@ -201,10 +201,9 @@ final class BerlinClockConverter_Tests: XCTestCase {
         let berlinClockResult = converter.convert(date: date)
         
         //Then
-        XCTAssertEqual(berlinClockResult.bottomMinutes[0], Lights.off)
-        XCTAssertEqual(berlinClockResult.bottomMinutes[1], Lights.off)
-        XCTAssertEqual(berlinClockResult.bottomMinutes[2], Lights.off)
-        XCTAssertEqual(berlinClockResult.bottomMinutes[3], Lights.off)
+        berlinClockResult.bottomMinutes.forEach {
+            XCTAssertEqual($0, Lights.off)
+        }
     }
     
     
@@ -218,10 +217,9 @@ final class BerlinClockConverter_Tests: XCTestCase {
         let berlinClockResult = converter.convert(date: date)
         
         //Then
-        XCTAssertEqual(berlinClockResult.bottomMinutes[0], Lights.yellow)
-        XCTAssertEqual(berlinClockResult.bottomMinutes[1], Lights.yellow)
-        XCTAssertEqual(berlinClockResult.bottomMinutes[2], Lights.yellow)
-        XCTAssertEqual(berlinClockResult.bottomMinutes[3], Lights.yellow)
+        berlinClockResult.bottomMinutes.forEach {
+            XCTAssertEqual($0, Lights.yellow)
+        }
     }
     
 }
