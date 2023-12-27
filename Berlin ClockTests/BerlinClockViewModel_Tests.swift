@@ -44,6 +44,4 @@ final class BerlinClockViewModel_Tests: XCTestCase {
             XCTAssertEqual(Lights.off, $0)
         }
     }
-
-
 }

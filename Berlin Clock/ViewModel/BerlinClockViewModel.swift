@@ -7,9 +7,9 @@
 
 import Foundation
 
-class BerlinClockViewModel {
+class BerlinClockViewModel: ObservableObject {
     
-    var berlinClock: BerlinClock
+    @Published var berlinClock: BerlinClock
     let converter: BerlinClockConverter
     let dateProvider: () -> Date
     private var timer: Timer?
