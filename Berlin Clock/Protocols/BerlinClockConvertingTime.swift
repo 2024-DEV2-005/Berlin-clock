@@ -10,4 +10,3 @@ import Foundation
 protocol BerlinClockConvertingTime {
     func convert(date: Date) -> BerlinClock
 }
-
